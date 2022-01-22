@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C895E12279A79DF00FA4B87 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C895E11279A79DF00FA4B87 /* Renderer.swift */; };
+		5C895E14279A7BAD00FA4B87 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C895E13279A7BAD00FA4B87 /* CameraViewController.swift */; };
+		5C895E16279A7C1A00FA4B87 /* CameraViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C895E15279A7C1A00FA4B87 /* CameraViewControllerWrapper.swift */; };
+		5C895E18279A7D8E00FA4B87 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C895E17279A7D8E00FA4B87 /* CameraView.swift */; };
+		5C895E23279A805500FA4B87 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C895E1F279A805500FA4B87 /* Helpers.swift */; };
+		5C895E24279A805500FA4B87 /* MetalBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C895E20279A805500FA4B87 /* MetalBuffer.swift */; };
+		5C895E2A279A818900FA4B87 /* Camera.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5C895E29279A818900FA4B87 /* Camera.metal */; };
 		5CF1DF03279A6F72007513E0 /* DepthClipperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF1DF02279A6F72007513E0 /* DepthClipperApp.swift */; };
 		5CF1DF05279A6F72007513E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF1DF04279A6F72007513E0 /* ContentView.swift */; };
 		5CF1DF07279A6F73007513E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF1DF06279A6F73007513E0 /* Assets.xcassets */; };
@@ -14,6 +21,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C895E11279A79DF00FA4B87 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		5C895E13279A7BAD00FA4B87 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5C895E15279A7C1A00FA4B87 /* CameraViewControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewControllerWrapper.swift; sourceTree = "<group>"; };
+		5C895E17279A7D8E00FA4B87 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		5C895E1F279A805500FA4B87 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		5C895E20279A805500FA4B87 /* MetalBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalBuffer.swift; sourceTree = "<group>"; };
+		5C895E28279A810800FA4B87 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		5C895E29279A818900FA4B87 /* Camera.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Camera.metal; sourceTree = "<group>"; };
+		5C895E2B279A920700FA4B87 /* DepthClipper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DepthClipper-Bridging-Header.h"; sourceTree = "<group>"; };
 		5CF1DEFF279A6F72007513E0 /* DepthClipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DepthClipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF1DF02279A6F72007513E0 /* DepthClipperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthClipperApp.swift; sourceTree = "<group>"; };
 		5CF1DF04279A6F72007513E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +48,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C895E1A279A7FE300FA4B87 /* CameraView */ = {
+			isa = PBXGroup;
+			children = (
+				5C895E17279A7D8E00FA4B87 /* CameraView.swift */,
+				5C895E15279A7C1A00FA4B87 /* CameraViewControllerWrapper.swift */,
+				5C895E13279A7BAD00FA4B87 /* CameraViewController.swift */,
+				5C895E11279A79DF00FA4B87 /* Renderer.swift */,
+			);
+			path = CameraView;
+			sourceTree = "<group>";
+		};
+		5C895E1E279A805500FA4B87 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5C895E1F279A805500FA4B87 /* Helpers.swift */,
+				5C895E20279A805500FA4B87 /* MetalBuffer.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5C895E27279A80F000FA4B87 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				5C895E28279A810800FA4B87 /* ShaderTypes.h */,
+				5C895E29279A818900FA4B87 /* Camera.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
 		5CF1DEF6279A6F72007513E0 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +96,12 @@
 		5CF1DF01279A6F72007513E0 /* DepthClipper */ = {
 			isa = PBXGroup;
 			children = (
+				5C895E1E279A805500FA4B87 /* Common */,
+				5C895E1A279A7FE300FA4B87 /* CameraView */,
+				5C895E27279A80F000FA4B87 /* Shaders */,
 				5CF1DF02279A6F72007513E0 /* DepthClipperApp.swift */,
 				5CF1DF04279A6F72007513E0 /* ContentView.swift */,
+				5C895E2B279A920700FA4B87 /* DepthClipper-Bridging-Header.h */,
 				5CF1DF06279A6F73007513E0 /* Assets.xcassets */,
 				5CF1DF08279A6F73007513E0 /* Preview Content */,
 			);
@@ -137,7 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C895E12279A79DF00FA4B87 /* Renderer.swift in Sources */,
+				5C895E24279A805500FA4B87 /* MetalBuffer.swift in Sources */,
+				5C895E23279A805500FA4B87 /* Helpers.swift in Sources */,
+				5C895E14279A7BAD00FA4B87 /* CameraViewController.swift in Sources */,
 				5CF1DF05279A6F72007513E0 /* ContentView.swift in Sources */,
+				5C895E18279A7D8E00FA4B87 /* CameraView.swift in Sources */,
+				5C895E2A279A818900FA4B87 /* Camera.metal in Sources */,
+				5C895E16279A7C1A00FA4B87 /* CameraViewControllerWrapper.swift in Sources */,
 				5CF1DF03279A6F72007513E0 /* DepthClipperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +328,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used for augmenting reality.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -285,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.spiralmind.experimental.DepthClipper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DepthClipper/DepthClipper-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +359,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used for augmenting reality.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,6 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.spiralmind.experimental.DepthClipper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DepthClipper/DepthClipper-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
